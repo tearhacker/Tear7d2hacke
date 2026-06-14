@@ -116,10 +116,11 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 
       <!-- Download CTA -->
       <a
-        href="#project-7d2d"
+        href="https://github.com/tearhacker/Tear7d2hacke/releases"
+        target="_blank"
+        rel="noopener noreferrer"
         class="btn-gradient px-5 py-1.5 text-xs font-bold uppercase tracking-wider cursor-pointer no-underline"
         style="font-family: var(--font-mono)"
-        @click.prevent="scrollTo('#project-7d2d')"
       >
         {{ t('nav.download') }}
       </a>

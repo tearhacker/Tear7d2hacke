@@ -121,7 +121,7 @@ const iconPaths: Record<string, string> = {
           </a>
           <!-- GitHub -->
           <a
-            href="https://github.com/tearhacker"
+            href="https://github.com/tearhacker/Tear7d2hacke"
             target="_blank"
             rel="noopener"
             class="cyber-card px-5 py-3 flex items-center gap-3 no-underline transition-all duration-200"
