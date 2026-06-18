@@ -1,0 +1,70 @@
+<configs>
+    <!-- ============================================================ -->
+    <!--  丧尸搜刮 Mod - 所有丧尸100%掉落可搜刮背包                    -->
+    <!--  V3.0适配：为僵尸模板类添加 LootDropProb 属性                  -->
+    <!--                                                              -->
+    <!--  搜刮内容按丧尸类型自动分配（游戏原有机制）：                  -->
+    <!--  普通丧尸 → zPackReg (基础资源+弹药+书籍+装备)                -->
+    <!--  护士丧尸 → zPackNurse (医疗物资+药物)                        -->
+    <!--  实验室丧尸 → zPackLab (机械零件+电子元件)                    -->
+    <!--  工人丧尸 → zPackUtility (建筑材料+工具)                      -->
+    <!--  士兵丧尸 → zPackSoldier (弹药+武器零件+军事杂志)             -->
+    <!--  暴徒丧尸 → zPackThug (弹药+爆炸物+武器零件)                 -->
+    <!--  充能丧尸 → zPackStrong (高级资源+武器+护甲+载具零件)         -->
+    <!--  瘟疫丧尸 → zPackPlague (高级资源+武器+护甲)                  -->
+    <!--  Boss丧尸 → zPackBoss (顶级资源+全套装备+稀有物品)            -->
+    <!-- ============================================================ -->
+
+    <!-- ====== 核心修改：僵尸模板类添加 LootDropProb=1 (100%) ====== -->
+
+    <!-- 基础僵尸模板 - 所有普通僵尸继承自此 -->
+    <append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
+        <property name="LootDropProb" value="1"/>
+        <property name="LootDropEntityClass" value="EntityLootContainer"/>
+    </append>
+
+    <!-- 矮小僵尸模板 - 继承自 zombieTemplateMale -->
+    <append xpath="/entity_classes/entity_class[@name='zombieTemplateShort']">
+        <property name="LootDropProb" value="1"/>
+        <property name="LootDropEntityClass" value="EntityLootContainer"/>
+    </append>
+
+    <!-- 瘦女性僵尸模板 - 继承自 zombieTemplateShort -->
+    <append xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']">
+        <property name="LootDropProb" value="1"/>
+        <property name="LootDropEntityClass" value="EntityLootContainer"/>
+    </append>
+
+    <!-- ====== 特殊僵尸确保100%掉落 ====== -->
+
+    <!-- 爆破僵尸 - 使用强战利品 -->
+    <set xpath="/entity_classes/entity_class[@name='zombieBoeFeral']/property[@name='LootDropProb']/@value">1</set>
+    <set xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']/property[@name='LootDropProb']/@value">1</set>
+
+    <!-- 尖叫僵尸 -->
+    <set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/property[@name='LootDropProb']/@value">1</set>
+    <set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='LootDropProb']/@value">1</set>
+
+    <!-- 辐射僵尸 -->
+    <set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='LootDropProb']/@value">1</set>
+
+    <!-- 实验室僵尸 - 使用机械战利品 -->
+    <set xpath="/entity_classes/entity_class[@name='zombieLabRadiated']/property[@name='LootDropProb']/@value">1</set>
+    <set xpath="/entity_classes/entity_class[@name='zombieLabCharged']/property[@name='LootDropProb']/@value">1</set>
+
+    <!-- 护士僵尸 - 使用医疗战利品 -->
+    <set xpath="/entity_classes/entity_class[@name='zombieNurseFeral']/property[@name='LootDropProb']/@value">1</set>
+    <set xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']/property[@name='LootDropProb']/@value">1</set>
+
+    <!-- 士兵僵尸 - 使用军事战利品 -->
+    <set xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']/property[@name='LootDropProb']/@value">1</set>
+    <set xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']/property[@name='LootDropProb']/@value">1</set>
+
+    <!-- 工人僵尸 - 使用工具战利品 -->
+    <set xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']/property[@name='LootDropProb']/@value">1</set>
+    <set xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']/property[@name='LootDropProb']/@value">1</set>
+
+    <!-- ====== 延长战利品背包存在时间 600秒(10分钟) ====== -->
+    <set xpath="/entity_classes/entity_class[@name='EntityLootContainer']/property[@name='TimeStayAfterDeath']/@value">600</set>
+
+</configs>

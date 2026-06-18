@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <!-- ModInfo V2 格式 (V3.0 必需) -->
+    <Name value="ZombieDayScale" />
+    <DisplayName value="丧尸强化+尸潮增强" />
+    <Version value="3.0.0" />
+    <Description value="丧尸血量和攻击力随天数增长,血月必触发尸潮,随机日夜间触发小规模尸潮 (七日杀3.0)" />
+    <Author value="泪心" />
+    <Website value="http://teargamestorem.top/" />
+</xml>

@@ -1,0 +1,22 @@
+<configs>
+    <!-- 添加大背包 buff，由玩家常驻状态检查 buff 自动触发 -->
+    <append xpath="/buffs">
+        <buff name="buffBigBackpack180" hidden="true" remove_on_death="false">
+            <stack_type value="ignore"/>
+            <update_rate value="5"/>
+            <effect_group>
+                <!-- 背包总槽位设为 180 (20列x9行) -->
+                <passive_effect name="BagSize" operation="base_set" value="180"/>
+                <!-- CarryCapacity 设为高值，无负重惩罚 -->
+                <passive_effect name="CarryCapacity" operation="base_set" value="999"/>
+            </effect_group>
+        </buff>
+    </append>
+
+    <!-- 在玩家常驻状态检查 buff 中自动添加大背包 buff -->
+    <append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBigBackpack180">
+            <requirement name="!HasBuff" buff="buffBigBackpack180"/>
+        </triggered_effect>
+    </append>
+</configs>

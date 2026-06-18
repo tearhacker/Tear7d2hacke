@@ -1,0 +1,135 @@
+<configs>
+    <!-- ============================================ -->
+    <!--  实体雷达V3.0完整修复版                          -->
+    <!--  修复内容:                                       -->
+    <!--  1. V3.0 NPC商人名称变更 (traderJoel → npcTraderJoel) -->
+    <!--  2. NavObject属性: show_distance → text_type="Distance" -->
+    <!--  3. 增加 sprite_size 控制图标大小                  -->
+    <!--  ============================================ -->
+
+    <!-- ============================================ -->
+    <!--  僵尸模板类 - 基础配置                           -->
+    <!--  ============================================ -->
+
+    <!-- 基础僵尸模板 - 所有普通僵尸继承自此 -->
+    <append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
+        <property name="NavObject" value="RadarEnemy" />
+    </append>
+
+    <!-- 矮小僵尸模板 - 继承自 zombieTemplateMale -->
+    <append xpath="/entity_classes/entity_class[@name='zombieTemplateShort']">
+        <property name="NavObject" value="RadarEnemy" />
+    </append>
+
+    <!-- 瘦女性僵尸模板 - 继承自 zombieTemplateShort -->
+    <append xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']">
+        <property name="NavObject" value="RadarEnemy" />
+    </append>
+
+    <!-- ============================================ -->
+    <!--  特殊僵尸 - 橙色雷达                            -->
+    <!--  ============================================ -->
+
+    <!-- 爆破僵尸 -->
+    <append xpath="/entity_classes/entity_class[@name='zombieBoe']">
+        <property name="NavObject" value="RadarSpecial" />
+    </append>
+
+    <!-- 尖叫僵尸 -->
+    <append xpath="/entity_classes/entity_class[@name='zombieScreamer']">
+        <property name="NavObject" value="RadarSpecial" />
+    </append>
+
+    <!-- 辐射僵尸 -->
+    <append xpath="/entity_classes/entity_class[@name='zombieWightFeral']">
+        <property name="NavObject" value="RadarSpecial" />
+    </append>
+
+    <!-- 辐射实验室僵尸 -->
+    <append xpath="/entity_classes/entity_class[@name='zombieLabRadiated']">
+        <property name="NavObject" value="RadarSpecial" />
+    </append>
+
+    <!-- 充能实验室僵尸 -->
+    <append xpath="/entity_classes/entity_class[@name='zombieLabCharged']">
+        <property name="NavObject" value="RadarSpecial" />
+    </append>
+
+    <!-- 雪地僵尸群 -->
+    <append xpath="/entity_classes/entity_class[@name='zombieSnow']">
+        <property name="NavObject" value="RadarSpecial" />
+    </append>
+
+    <!-- ============================================ -->
+    <!--  友好动物 - 绿色雷达                            -->
+    <!--  ============================================ -->
+
+    <append xpath="/entity_classes/entity_class[@name='animalStag']">
+        <property name="NavObject" value="RadarAnimal" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='animalRabbit']">
+        <property name="NavObject" value="RadarAnimal" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='animalChicken']">
+        <property name="NavObject" value="RadarAnimal" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='animalDoe']">
+        <property name="NavObject" value="RadarAnimal" />
+    </append>
+
+    <!-- ============================================ -->
+    <!--  敌对动物 - 黄色雷达                            -->
+    <!--  ============================================ -->
+
+    <append xpath="/entity_classes/entity_class[@name='animalWolf']">
+        <property name="NavObject" value="RadarHostileAnimal" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='animalDirewolf']">
+        <property name="NavObject" value="RadarHostileAnimal" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='animalBear']">
+        <property name="NavObject" value="RadarHostileAnimal" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='animalMountainLion']">
+        <property name="NavObject" value="RadarHostileAnimal" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='animalCoyote']">
+        <property name="NavObject" value="RadarHostileAnimal" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='animalSnake']">
+        <property name="NavObject" value="RadarHostileAnimal" />
+    </append>
+
+    <!-- ============================================ -->
+    <!--  NPC商人 - 蓝色雷达 (V3.0名称: npcTrader*)      -->
+    <!--  ============================================ -->
+
+    <append xpath="/entity_classes/entity_class[@name='npcTraderJoel']">
+        <property name="NavObject" value="RadarNPC" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='npcTraderHugh']">
+        <property name="NavObject" value="RadarNPC" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='npcTraderJen']">
+        <property name="NavObject" value="RadarNPC" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='npcTraderBob']">
+        <property name="NavObject" value="RadarNPC" />
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='npcTraderRekt']">
+        <property name="NavObject" value="RadarNPC" />
+    </append>
+
+</configs>

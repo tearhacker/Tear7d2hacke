@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="ZombieLootDrop" />
+    <DisplayName value="僵尸百分百掉落物资包" />
+    <Version value="2.0.0" />
+    <Description value="All zombies drop loot bags on death with 100% probability | V3.0 Compatible | Author: 泪心 (tearhacker)" />
+    <Author value="泪心 (tearhacker)" />
+    <Website value="http://teargamestorem.top/" />
+</xml>

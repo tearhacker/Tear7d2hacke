@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="EntityRadar" />
+    <DisplayName value="实体雷达(僵尸/动物/NPC)" />
+    <Version value="3.0.0" />
+    <Description value="Show zombies/animals/NPCs on minimap and compass | V3.0 Compatible | Author: 泪心 (tearhacker)" />
+    <Author value="泪心 (tearhacker)" />
+    <Website value="http://teargamestorem.top/" />
+</xml>

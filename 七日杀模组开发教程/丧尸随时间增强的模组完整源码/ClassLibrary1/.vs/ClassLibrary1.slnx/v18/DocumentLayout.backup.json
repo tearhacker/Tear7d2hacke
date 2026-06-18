@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86416056-3CC1-4BFA-B29B-A79CA4145CD2}|ClassLibrary1\\ClassLibrary1.csproj|d:\\wegameapps\\pc\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740c\u7ED8\u5236\u6E90\u7801imgui\\\u4E03\u65E5\u6740\u8D44\u6599\\mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\classlibrary1\\classlibrary1\\zombiedayscalemod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86416056-3CC1-4BFA-B29B-A79CA4145CD2}|ClassLibrary1\\ClassLibrary1.csproj|solutionrelative:classlibrary1\\zombiedayscalemod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86416056-3CC1-4BFA-B29B-A79CA4145CD2}|ClassLibrary1\\ClassLibrary1.csproj|D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\classlibrary1\\properties\\gamefunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86416056-3CC1-4BFA-B29B-A79CA4145CD2}|ClassLibrary1\\ClassLibrary1.csproj|solutionrelative:classlibrary1\\properties\\gamefunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86416056-3CC1-4BFA-B29B-A79CA4145CD2}|ClassLibrary1\\ClassLibrary1.csproj|D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\classlibrary1\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86416056-3CC1-4BFA-B29B-A79CA4145CD2}|ClassLibrary1\\ClassLibrary1.csproj|solutionrelative:classlibrary1\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ClassLibrary1||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ZombieDayScaleMod.cs",
+              "DocumentMoniker": "D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\ClassLibrary1\\ZombieDayScaleMod.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\ZombieDayScaleMod.cs",
+              "ToolTip": "D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\ClassLibrary1\\ZombieDayScaleMod.cs",
+              "RelativeToolTip": "ClassLibrary1\\ZombieDayScaleMod.cs",
+              "ViewState": "AgIAADgBAAAAAAAAAAAewEQBAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:01:24.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\ClassLibrary1\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\ClassLibrary1\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "ClassLibrary1\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:01:24.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "gamefunc.cs",
+              "DocumentMoniker": "D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\ClassLibrary1\\Properties\\gamefunc.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Properties\\gamefunc.cs",
+              "ToolTip": "D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\ClassLibrary1\\Properties\\gamefunc.cs",
+              "RelativeToolTip": "ClassLibrary1\\Properties\\gamefunc.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAIA3wL4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:01:24.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClassLibrary1",
+              "DocumentMoniker": "D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj",
+              "RelativeDocumentMoniker": "ClassLibrary1\\ClassLibrary1.csproj",
+              "ToolTip": "D:\\WeGameApps\\PC\u9006\u5411\u5B8C\u6574\u6280\u672F\\\u4E03\u65E5\u6740C\u7ED8\u5236\u6E90\u7801IMGUI\\\u4E03\u65E5\u6740\u8D44\u6599\\Mods\\\u4E27\u5C38\u968F\u65F6\u95F4\u589E\u5F3A\u7684\u6A21\u7EC4\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj*",
+              "RelativeToolTip": "ClassLibrary1\\ClassLibrary1.csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-18T07:01:24.848Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

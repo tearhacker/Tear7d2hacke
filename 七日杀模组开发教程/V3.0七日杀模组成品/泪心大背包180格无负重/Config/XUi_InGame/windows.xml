@@ -1,0 +1,61 @@
+<configs>
+    <!-- ============================================ -->
+    <!--  180格科幻风大背包  20列 x 9行               -->
+    <!--  cell: 45x45  grid: 900x405                  -->
+    <!--  窗口宽: 920  高: 470                         -->
+    <!--  V3.0适配：路径 XUi_InGame + item_stack       -->
+    <!-- ============================================ -->
+
+    <!-- 替换整个背包窗口 -->
+    <remove xpath="/windows/window[@name='windowBackpack']"/>
+
+    <append xpath="/windows">
+        <window name="windowBackpack" width="920" height="470" panel="Center" controller="BackpackWindow" cursor_area="true">
+
+            <!-- ====== 头部：科幻深蓝底 + 青色标题 ====== -->
+            <rect name="header" height="43" depth="1">
+                <headerbg />
+                <!-- 头部底色叠加：深蓝 -->
+                <sprite depth="0" pos="0,0" width="920" height="43" color="8,18,38,220" type="sliced"/>
+                <!-- 顶部装饰线：青色发光条 -->
+                <sprite depth="1" pos="0,-1" width="920" height="2" color="0,220,255,200" type="sliced"/>
+
+                <sprite depth="3" name="windowIcon" style="icon32px" pivot="center" pos="21,-21" sprite="ui_game_symbol_backpack" color="0,220,255,255"/>
+                <label depth="3" name="windowName" pos="42,-6" width="200" height="32" text="INVENTORY" text_key="xuiInventory" font_size="32" color="0,220,255,255" effect="outline" effect_distance="1,1" effect_color="0,60,80,200"/>
+
+                <!-- 容量显示 -->
+                <label depth="3" pos="300,-8" width="200" height="28" text="180 SLOTS" font_size="24" color="0,200,240,255" justify="center" effect="outline" effect_distance="1,1" effect_color="0,40,60,180"/>
+
+                <!-- 操作按钮区 -->
+                <rect pos="620,0" width="310" controller="ContainerStandardControls" move_start_bottom_left="true">
+                    <button depth="3" name="btnClearInventory" sprite="ui_game_symbol_trash" tooltip_key="lblClearInventory" pos="-45, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{creativewindowopen}" defaultcolor="[iconColor]" hovercolor="[hoverColor]" selectedcolor="[selectedColor]"/>
+                    <button depth="3" name="btnToggleLockMode" sprite="ui_game_symbol_lock" tooltip_key="xuiStashLockModeToggle" pos="0, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" selected="{userlockmode}"/>
+                    <button depth="3" name="btnSort" sprite="ui_game_symbol_sort" tooltip_key="lblSortContainer" pos="50, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]"/>
+                    <rect pos="0, 0" visible="{lootingorvehiclestorage}">
+                        <button depth="3" name="btnMoveFillAndSmart" sprite="ui_game_symbol_store_similar_down" tooltip_key="lblStashFillAndSmart" pos="100, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]"/>
+                        <button depth="3" name="btnMoveAll" sprite="ui_game_symbol_store_all_down" tooltip_key="lblStashAll" pos="150, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]"/>
+                    </rect>
+                </rect>
+
+                <label depth="2" pos="810,-8" width="80" height="28" text="{currencyamount}" justify="right" color="0,220,255,255"/>
+                <sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="895,-10" color="0,220,255,255" foregroundlayer="true"/>
+            </rect>
+
+            <!-- ====== 内容区：20列x9行网格 ====== -->
+            <rect name="content" height="420" depth="0" pos="0,-46">
+                <!-- 深色半透明背景 -->
+                <sprite depth="0" pos="0,0" width="920" height="420" color="5,12,28,200" type="sliced"/>
+                <!-- 边框：青色发光边 -->
+                <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="920" height="420" color="0,160,200,120" type="sliced" fillcenter="false" on_press="true" gamepad_selectable="false"/>
+                <!-- 内部网格线装饰 -->
+                <sprite depth="1" pos="5,-5" width="910" height="410" color="10,25,50,180" type="sliced"/>
+
+                <!-- 背包网格：20列 x 9行 = 180格 -->
+                <grid depth="10" name="inventory" rows="9" cols="20" pos="8,-8" cell_width="45" cell_height="45" controller="Backpack" repeat_content="true">
+                    <item_stack name="0" cell_size="45"/>
+                </grid>
+            </rect>
+
+        </window>
+    </append>
+</configs>

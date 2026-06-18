@@ -1,0 +1,173 @@
+<configs>
+    <!-- ============================================ -->
+    <!--  雷达图标样式定义 (V3.0完整修复版)                 -->
+    <!--  V3.0属性变更:                                  -->
+    <!--    - show_distance → text_type="Distance"      -->
+    <!--    - 新增 sprite_size / font_size 控制          -->
+    <!--  ============================================ -->
+
+    <!-- 敌对实体 (僵尸) 红色脉冲 -->
+    <append xpath="/nav_object_classes">
+        <nav_object_class name="RadarEnemy">
+            <map_settings>
+                <property name="sprite_name" value="ui_game_symbol_enemy_blip" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+                <property name="color" value="255,50,50,255" />
+                <property name="has_pulse" value="true" />
+            </map_settings>
+            <compass_settings>
+                <property name="sprite_name" value="ui_game_symbol_zombie" />
+                <property name="color" value="255,50,50,255" />
+                <property name="has_pulse" value="true" />
+                <property name="icon_clamped" value="true" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+            </compass_settings>
+            <onscreen_settings>
+                <property name="sprite_name" value="ui_game_symbol_enemy_blip" />
+                <property name="color" value="255,50,50,255" />
+                <property name="offset" value="0,2.2,0" />
+                <property name="has_pulse" value="true" />
+                <property name="min_distance" value="1" />
+                <property name="max_distance" value="150" />
+                <property name="text_type" value="Distance" />
+                <property name="font_size" value="20" />
+                <property name="font_color" value="255,200,200,255" />
+                <property name="sprite_size" value="32" />
+                <property name="show_offscreen" value="true" />
+            </onscreen_settings>
+        </nav_object_class>
+    </append>
+
+    <!-- 特殊僵尸 (爆破/尖叫/辐射) 橙色 -->
+    <append xpath="/nav_object_classes">
+        <nav_object_class name="RadarSpecial">
+            <map_settings>
+                <property name="sprite_name" value="ui_game_symbol_enemy_blip" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+                <property name="color" value="255,165,0,255" />
+                <property name="has_pulse" value="true" />
+            </map_settings>
+            <compass_settings>
+                <property name="sprite_name" value="ui_game_symbol_zombie" />
+                <property name="color" value="255,165,0,255" />
+                <property name="has_pulse" value="true" />
+                <property name="icon_clamped" value="true" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+            </compass_settings>
+            <onscreen_settings>
+                <property name="sprite_name" value="ui_game_symbol_enemy_blip" />
+                <property name="color" value="255,165,0,255" />
+                <property name="offset" value="0,2.2,0" />
+                <property name="has_pulse" value="true" />
+                <property name="min_distance" value="1" />
+                <property name="max_distance" value="200" />
+                <property name="text_type" value="Distance" />
+                <property name="font_size" value="22" />
+                <property name="font_color" value="255,220,150,255" />
+                <property name="sprite_size" value="36" />
+                <property name="show_offscreen" value="true" />
+            </onscreen_settings>
+        </nav_object_class>
+    </append>
+
+    <!-- 友好动物 (鹿/兔子/鸡) 绿色 -->
+    <append xpath="/nav_object_classes">
+        <nav_object_class name="RadarAnimal">
+            <map_settings>
+                <property name="sprite_name" value="ui_game_symbol_tracking_deer" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+                <property name="color" value="100,255,100,255" />
+            </map_settings>
+            <compass_settings>
+                <property name="sprite_name" value="ui_game_symbol_tracking_deer" />
+                <property name="color" value="100,255,100,255" />
+                <property name="icon_clamped" value="true" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+            </compass_settings>
+            <onscreen_settings>
+                <property name="sprite_name" value="ui_game_symbol_tracking_deer" />
+                <property name="color" value="100,255,100,255" />
+                <property name="offset" value="0,1.5,0" />
+                <property name="min_distance" value="1" />
+                <property name="max_distance" value="100" />
+                <property name="text_type" value="Distance" />
+                <property name="font_size" value="18" />
+                <property name="font_color" value="200,255,200,255" />
+                <property name="sprite_size" value="28" />
+                <property name="show_offscreen" value="true" />
+            </onscreen_settings>
+        </nav_object_class>
+    </append>
+
+    <!-- 敌对动物 (狼/熊/狮) 黄色 -->
+    <append xpath="/nav_object_classes">
+        <nav_object_class name="RadarHostileAnimal">
+            <map_settings>
+                <property name="sprite_name" value="ui_game_symbol_enemy_blip" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+                <property name="color" value="255,255,0,255" />
+                <property name="has_pulse" value="true" />
+            </map_settings>
+            <compass_settings>
+                <property name="sprite_name" value="ui_game_symbol_zombie" />
+                <property name="color" value="255,255,0,255" />
+                <property name="has_pulse" value="true" />
+                <property name="icon_clamped" value="true" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+            </compass_settings>
+            <onscreen_settings>
+                <property name="sprite_name" value="ui_game_symbol_enemy_blip" />
+                <property name="color" value="255,255,0,255" />
+                <property name="offset" value="0,1.5,0" />
+                <property name="has_pulse" value="true" />
+                <property name="min_distance" value="1" />
+                <property name="max_distance" value="150" />
+                <property name="text_type" value="Distance" />
+                <property name="font_size" value="20" />
+                <property name="font_color" value="255,255,200,255" />
+                <property name="sprite_size" value="32" />
+                <property name="show_offscreen" value="true" />
+            </onscreen_settings>
+        </nav_object_class>
+    </append>
+
+    <!-- NPC (商人) 蓝色 -->
+    <append xpath="/nav_object_classes">
+        <nav_object_class name="RadarNPC">
+            <map_settings>
+                <property name="sprite_name" value="ui_game_symbol_trader" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+                <property name="color" value="100,180,255,255" />
+            </map_settings>
+            <compass_settings>
+                <property name="sprite_name" value="ui_game_symbol_trader" />
+                <property name="color" value="100,180,255,255" />
+                <property name="icon_clamped" value="false" />
+                <property name="min_distance" value="0" />
+                <property name="max_distance" value="-1" />
+            </compass_settings>
+            <onscreen_settings>
+                <property name="sprite_name" value="ui_game_symbol_trader" />
+                <property name="color" value="100,180,255,255" />
+                <property name="offset" value="0,2.5,0" />
+                <property name="min_distance" value="1" />
+                <property name="max_distance" value="300" />
+                <property name="text_type" value="Distance" />
+                <property name="font_size" value="22" />
+                <property name="font_color" value="180,220,255,255" />
+                <property name="sprite_size" value="36" />
+                <property name="show_offscreen" value="true" />
+            </onscreen_settings>
+        </nav_object_class>
+    </append>
+
+</configs>

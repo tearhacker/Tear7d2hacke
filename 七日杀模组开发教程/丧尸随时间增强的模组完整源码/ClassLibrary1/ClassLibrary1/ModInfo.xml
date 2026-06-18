@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="ZombieDayScale" />
+    <DisplayName value="丧尸随天数强化+尸潮系统" />
+    <Version value="3.0.0" />
+    <Description value="丧尸血量和攻击力随天数增强，血月必定触发尸潮，随机日也有小规模尸潮" />
+    <Author value="泪心" />
+    <Website value="" />
+</xml>
