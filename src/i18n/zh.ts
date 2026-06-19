@@ -15,7 +15,7 @@ export default {
   },
   hero: {
     statusOnline: 'SYSTEM ONLINE',
-    version: 'v1.0.0 BUILD 2406',
+    version: 'v3.0.0 b252',
     titleCn: '泪心游戏',
     titleEn: 'T E A R H E A R T   G A M I N G',
     subtitle: '下一代赛博风游戏增强平台 · 多项目 · 多游戏 · 一站式体验',
@@ -39,11 +39,11 @@ export default {
     p1: {
       tag: 'PROJECT 01',
       name: '泪心七日杀',
-      nameEn: 'V2.6(b14)',
-      desc: '七日杀全功能增强模组：内存修改/ESP透视/自瞄系统/武器增强/HUD信息面板/技能满级，IMGUI赛博风界面',
+      nameEn: 'v3.0(b252)',
+      desc: '七日杀全功能增强模组：内存修改/ESP透视/自瞄系统/武器增强/HUD信息面板/技能满级/一键种植/一键收割/自动割肉/全局快捷键面板，IMGUI赛博风界面',
       status: '已发布',
       statusColor: 'online',
-      features: ['内存修改', 'ESP透视', '自瞄系统', '武器增强', 'HUD面板', '技能满级'],
+      features: ['内存修改', 'ESP透视', '自瞄系统', '武器增强', 'HUD面板', '技能满级', '一键种植', '一键收割', '自动割肉', '快捷键面板'],
       btnText: '查看详情',
       btnHref: '#project-7d2d',
     },
@@ -159,7 +159,7 @@ export default {
   // 七日杀项目详情区（原Features/Showcase/Install等）
   hero7d2d: {
     statusOnline: 'SYSTEM ONLINE',
-    version: 'v1.0.0 BUILD 2406',
+    version: 'v3.0.0 b252',
     titleCn: '泪心七日杀',
     titleEn: 'T E A R H E A R T   7 D 2 D',
     subtitle: '下一代赛博风模组与启动器 · NEXT-GEN MOD & LAUNCHER',
@@ -172,7 +172,7 @@ export default {
   features: {
     sectionTag: 'CORE FEATURES',
     title: '核心能力矩阵',
-    subtitle: '6大模块，覆盖生存·战斗·视觉·自瞄·信息·杂项全链路',
+    subtitle: '8大模块，覆盖生存·战斗·视觉·自瞄·信息·杂项·农业·快捷键全链路',
     cards: [
       {
         num: '01', title: 'ESP透视系统', titleEn: 'VISUALS / ESP',
@@ -203,6 +203,16 @@ export default {
         num: '06', title: '杂项工具', titleEn: 'MISC TOOLS',
         desc: '左栏游戏辅助(创意/调试/建造/拾取)+右栏深度内存修改，所有修改DLL卸载时自动还原',
         items: ['创意菜单', '调试菜单', '建造距离(1~100)', '建造间隔极速连放', '拾取距离(0~50)', '必定暴击'],
+      },
+      {
+        num: '07', title: '农业自动化', titleEn: 'FARM AUTOMATION',
+        desc: '一键种植/一键收割/自动割肉三大农业自动化功能，解放双手，高效经营农场',
+        items: ['一键种植', '一键收割', '自动割肉'],
+      },
+      {
+        num: '08', title: '全局快捷键面板', titleEn: 'GLOBAL HOTKEY PANEL',
+        desc: '游戏内常驻快捷键面板，内置快捷键一键开关功能，支持自定义绑定，原生贴合屏幕，实时显示已启用功能状态',
+        items: ['内置快捷键绑定', '自定义快捷键', '游戏内常驻显示', '原生贴合屏幕', '实时功能状态', '一键开关切换'],
       },
     ],
   },
@@ -247,13 +257,13 @@ export default {
       { num: '01', title: '下载 DLL', desc: '从 GitHub Release 下载 Game7D2D.dll 和 ModInfo.xml' },
       { num: '02', title: '放入 Mods 目录', desc: '将两个文件放入七日杀安装目录的 Mods 文件夹' },
       { num: '03', title: '启动游戏', desc: '正常启动七日杀，DLL 通过 Mono 自动加载' },
-      { num: '04', title: '按 Insert 打开菜单', desc: '赛博风 IMGUI 菜单，6大功能模块一键开关' },
+      { num: '04', title: '按 Insert 打开菜单', desc: '赛博风 IMGUI 菜单，8大功能模块一键开关' },
     ],
     sysReq: {
       title: 'SYSTEM REQUIREMENTS',
       os: 'Windows 10/11 x64',
       dotnet: '游戏内置 Mono 运行时',
-      game: '7 Days To Die V1.0+ (V2.6)',
+      game: '7 Days To Die V1.0+ (v3.0)',
       disk: '~5 MB',
       perm: '无需管理员权限',
     },
@@ -269,8 +279,9 @@ export default {
       { time: '2025 Q4', status: 'done', title: 'v1.0 核心框架', desc: 'Memory内存修改 + ESP透视 + IMGUI菜单 + 中英双语' },
       { time: '2026 Q1', status: 'done', title: 'v1.1 武器与自瞄', desc: '武器增强 + 鼠标自瞄 + 静默自瞄 + Chams着色器 + 僵尸类型标签' },
       { time: '2026 Q2', status: 'done', title: 'v1.2 稳定性重构', desc: 'Harmony Hook替代自定义Buff + 值追踪还原 + 帧节流优化 + 零GC热路径' },
-      { time: '2026 Q3', status: 'active', title: 'v1.3 技能与配置', desc: '技能满级 + 配件一键满配 + 配置持久化 + 实体名称本地化' },
-      { time: '2027 H1', status: 'plan', title: 'v2.0 多人适配', desc: '服务端验证绕过研究 + 反检测 + 更多游戏支持' },
+      { time: '2026 Q3', status: 'done', title: 'v1.3 技能与配置', desc: '技能满级 + 配件一键满配 + 配置持久化 + 实体名称本地化' },
+      { time: '2026 Q4', status: 'done', title: 'v2.0 农业自动化', desc: '一键种植 + 一键收割 + 自动割肉 + 农场经营全面自动化' },
+      { time: '2027 H1', status: 'active', title: 'v3.0 全面升级', desc: '服务端验证绕过研究 + 反检测 + 更多游戏支持 + 全面功能升级' },
     ],
   },
   faq: {
@@ -322,7 +333,7 @@ export default {
     tag: 'READY TO DEPLOY',
     title: '你的下一个游戏体验',
     subtitle: '开源免费 · 零遥测 · 完全本地运行',
-    btnDownload: '下载 v1.0',
+    btnDownload: '下载 v3.0',
     btnSource: '阅读源码',
     footer: 'Windows 10/11 · 25 MB · MIT License · No Telemetry',
   },
@@ -337,7 +348,7 @@ export default {
     contact: '联系',
     contactItems: ['Discord', 'QQ群', 'B站', '微博'],
     copyright: '© 2026 TearHeart Gaming',
-    version: 'v1.0.0 · BUILD 2406 · COMMIT a3f9c2',
+    version: 'v3.0.0 · b252',
   },
   toast: {
     downloadStarted: 'DOWNLOAD STARTED',

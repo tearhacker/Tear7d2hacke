@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="TraderAlwaysOpen24h" />
+    <DisplayName value="商人全天24小时营业(不关门)" />
+    <Version value="1.0.0" />
+    <Description value="移除所有商人的营业时间限制，商人全天24小时营业不再关门。纯XML补丁，V3.0兼容。" />
+    <Author value="泪心 (tearhacker)" />
+    <Website value="" />
+</xml>

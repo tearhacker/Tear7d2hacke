@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!--
+        商人全天24小时营业补丁
+        ============================================================
+        原理（基于反编译源码 TradersFromXml.cs / TraderInfo.cs 验证）：
+
+        1. traders.xml 中 <trader_info> 节点的 open_time / close_time 属性
+           在 TradersFromXml.ParseTraderInfo 中会触发：
+               traderInfo.UseOpenHours = true;
+
+        2. TraderInfo.IsOpen 的判定逻辑为：
+               if (!UseOpenHours || traderHoursPreset == AlwaysOpen || ...)
+                   return true;   // 永远开门
+
+        3. 只要没有 open_time / close_time，UseOpenHours 就保持 false，
+           IsOpen 恒为 true，商人不再关门。
+
+        4. EntityTrader 的门闸由  flag = !TraderInfo.IsOpen  驱动
+           (SetClosed)，IsOpen 恒 true => flag 恒 false => 门常开。
+
+        因此只需 removeattribute 删除这两个属性即可，无需 C# 改动。
+        原版5个主商人(id 1/2/6/7/8/9)均带 open_time="4:05" close_time="21:50"，
+        补丁命中它们；售货机/玩家自有的(id 3/4/5/10)本就没有这两个属性，
+        不受影响。
+        ============================================================
+    -->
+    <removeattribute xpath="/traders/trader_info/@open_time" />
+    <removeattribute xpath="/traders/trader_info/@close_time" />
+</configs>
